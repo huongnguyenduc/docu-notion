@@ -4,6 +4,7 @@ on:
     branches:
       - main
   workflow_dispatch:
+    types: [release]
     inputs:
       logLevel:
         description: "Log level"
