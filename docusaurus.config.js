@@ -16,7 +16,7 @@ const config = {
 
   organizationName: "huongnguyenduc", // Usually your GitHub org/user name.
   projectName: "docu-notion", // Usually your repo name.
-  deploymentBranch: "main",
+  deploymentBranch: "gh-pages",
   // Docusaurus recommends "trailingSlash:false", but that gives me an error on build.
   //[ERROR] Error: ENOENT: no such file or directory, open 'C:\dev\docu-notion\build\.html'
   trailingSlash: true,
