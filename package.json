@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "pull": "cross-var npx docu-notion -n secret_5UxUBifREHMhicKAP5KoQq07pqni5Xwi55HGHqYG8xr -r 885c717759e447f39c23859ba9eef5ef -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "//pull:stable": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
     "pull:stable": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "start": "docusaurus start",
