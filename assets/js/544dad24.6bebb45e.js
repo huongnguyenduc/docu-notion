@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_notion_sample_site=self.webpackChunkdocu_notion_sample_site||[]).push([[692],{2621:(e,n,t)=>{t.r(n),t.d(n,{default:()=>s});var l=t(7294);const s=()=>l.createElement("div",null,l.createElement("h1",null,"Index"))}}]);
