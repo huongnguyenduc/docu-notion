@@ -7,7 +7,7 @@ const [loading, setLoading] = React.useState(false);
     setLoading(true);
     try {
         const octokit = new Octokit({
-            auth: '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'
+            auth: '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'
         });
 
         const result = await octokit.request('POST /repos/huongnguyenduc/docu-notion/actions/workflows/43724788/dispatches', {
@@ -20,10 +20,11 @@ const [loading, setLoading] = React.useState(false);
             //     home: 'San Francisco, CA'
             // }
         });
-
+        setLoading(false);
         console.log("result", result);
     } catch (error) {
-        console.log(error)
+        console.log(error);
+        setLoading(false);
     }
     }
     return (
