@@ -1,13 +1,15 @@
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {Octokit} from '@octokit/core';
 import React from 'react';
 
 const Index = () => {
+    const {siteConfig} = useDocusaurusContext();
 const [loading, setLoading] = React.useState(false);
     const handleInvokeBuild = async () => {
     setLoading(true);
     try {
         const octokit = new Octokit({
-            auth: process.env.PAS
+            auth: siteConfig.REACT_APP_PAS
         });
 
         const result = await octokit.request('POST /repos/huongnguyenduc/docu-notion/actions/workflows/43724788/dispatches', {

@@ -28,7 +28,7 @@ jobs:
         env:
           DOCU_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
           DOCU_NOTION_ROOT_PAGE: ${{ secrets.DOCU_NOTION_SAMPLE_ROOT_PAGE }}
-          PAS: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
+          REACT_APP_PAS: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
         run: yarn pull
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
