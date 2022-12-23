@@ -7,7 +7,7 @@ const [loading, setLoading] = React.useState(false);
     setLoading(true);
     try {
         const octokit = new Octokit({
-            auth: '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'
+            auth: process.env.PAS
         });
 
         const result = await octokit.request('POST /repos/huongnguyenduc/docu-notion/actions/workflows/43724788/dispatches', {
