@@ -2,6 +2,7 @@ import React, {Fragment, useState, useEffect} from 'react';
 import siteConfig from '@generated/docusaurus.config';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { gapi } from 'gapi-script';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const Index = () => {
     const clientId = siteConfig.customFields.GOOGLE_CLIENT_ID;
@@ -69,6 +70,7 @@ const Index = () => {
 
     return (
         <Fragment>
+            <BrowserOnly>
             <div style={{width: '100%', display: "flex", justifyContent: "center", marginTop: "72px"}}>
                 <br />
 
@@ -113,6 +115,7 @@ const Index = () => {
                     />
                 )}
             </div>
+            </BrowserOnly>
         </Fragment>
     )
 }
