@@ -107,7 +107,8 @@ const config = {
       },
     }),
   customFields: {
-      REACT_APP_PAS: process.env.REACT_APP_PAS,
+    GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+    BACKEND_API_URL: process.env.BACKEND_API_URL,
   }
 };
 
