@@ -72,7 +72,7 @@ const Index = () => {
         <Fragment>
             <div style={{marginTop: "20px"}} />
             <BrowserOnly>
-            <div style={{width: '100%', display: "flex", justifyContent: "center", marginTop: "72px"}}>
+                {() => <div style={{width: '100%', display: "flex", justifyContent: "center", marginTop: "72px"}}>
                 <br />
 
                 {profile ? (
@@ -116,7 +116,7 @@ const Index = () => {
                     />
                 )}
             </div>
-            </BrowserOnly>
+                }</BrowserOnly>
         </Fragment>
     )
 }
