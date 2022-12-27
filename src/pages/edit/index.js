@@ -81,7 +81,6 @@ const Index = () => {
     }
 
     return (
-        <NavbarMobileSidebarProvider>
         <Fragment>
             <Navbar />
             <div style={{marginTop: "20px"}} />
@@ -132,7 +131,6 @@ const Index = () => {
                 </div>
                 }</BrowserOnly>
         </Fragment>
-        </NavbarMobileSidebarProvider>
     )
 }
 
