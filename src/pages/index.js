@@ -70,6 +70,7 @@ const Index = () => {
 
     return (
         <Fragment>
+            <div style={{marginTop: "20px"}} />
             <BrowserOnly>
             <div style={{width: '100%', display: "flex", justifyContent: "center", marginTop: "72px"}}>
                 <br />
