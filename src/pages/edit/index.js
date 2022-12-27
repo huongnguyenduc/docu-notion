@@ -3,10 +3,14 @@ import siteConfig from '@generated/docusaurus.config';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Layout from '@theme/Layout';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
 const Index = () => {
-    const clientId = siteConfig.customFields.GOOGLE_CLIENT_ID;
-    const backendApiUrl = siteConfig.customFields.BACKEND_API_URL;
+    const {
+        siteConfig: {customFields},
+    } = useDocusaurusContext();
+    const clientId = siteConfig.customFields.GOOGLE_CLIENT_ID || customFields.GOOGLE_CLIENT_ID;
+    const backendApiUrl = siteConfig.customFields.BACKEND_API_URL || customFields.BACKEND_API_URL;
     const [ profile, setProfile ] = useState(null);
     const [loading, setLoading] = useState(false);
     const [loadAuthorized, setLoadAuthorized] = useState(false);
