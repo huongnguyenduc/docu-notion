@@ -1,26 +1,17 @@
-import React, {Fragment, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import siteConfig from '@generated/docusaurus.config';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import Navbar from '@theme/Navbar';
+import Layout from '@theme/Layout';
 
 const Index = () => {
     const clientId = siteConfig.customFields.GOOGLE_CLIENT_ID;
     const backendApiUrl = siteConfig.customFields.BACKEND_API_URL;
     const [ profile, setProfile ] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [loadAuthorized, setLoadAuthorized] = useState(false);
     const [isAuthored, setIsAuthored] = useState(false);
     useEffect(() => {
-        // (async () => {
-        //     const gapi = await loadGapiInsideDOM();
-        //     const initClient = () => {
-        //         gapi.client.init({
-        //             clientId,
-        //             scope: ''
-        //         });
-        //     };
-        //     gapi.load('client:auth2', initClient);
-        // })();
         (async () => {
             import('gapi-script').then(({gapi}) => {
                 const initClient = () => {
@@ -38,6 +29,7 @@ const Index = () => {
         }
 
         // Check if user is in notion workspace
+        setLoadAuthorized(true);
         const checkUserAuthorized = async () => {
             const response = await fetch(`${backendApiUrl}/?email=${profile.email}`, {
                 method: 'GET',
@@ -50,6 +42,7 @@ const Index = () => {
             } else if (isAuthored) {
                 setIsAuthored(false);
             }
+            setLoadAuthorized(false);
         }
         checkUserAuthorized();
     }, [profile, isAuthored]);
@@ -81,13 +74,10 @@ const Index = () => {
     }
 
     return (
-        <Fragment>
-            <Navbar />
+        <Layout>
             <div style={{marginTop: "20px"}} />
             <BrowserOnly fallback={<div>Loading...</div>}>
                 {() => <div style={{width: '100%', display: "flex", justifyContent: "center", marginTop: "72px"}}>
-                    <br />
-
                     {profile ? (
                         <div>
                             <img src={profile.imageUrl} alt="user image" />
@@ -100,7 +90,7 @@ const Index = () => {
                             <br  />
                             <div style={{marginTop: "12px"}} />
                             {
-                                isAuthored ? (
+                                loadAuthorized ? <div>Check authorized...</div> : isAuthored ? (
                                     <div>
                                         <button
                                             type="button"
@@ -130,7 +120,7 @@ const Index = () => {
                     )}
                 </div>
                 }</BrowserOnly>
-        </Fragment>
+        </Layout>
     )
 }
 

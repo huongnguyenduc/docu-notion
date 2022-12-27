@@ -1,9 +1,11 @@
 import React from 'react';
+import Layout from '@theme/Layout';
+
 const Index = () => {
     return (
-        <div>
+        <Layout>
             <h1>Landing Page</h1>
-        </div>
+        </Layout>
     )
 }
 
