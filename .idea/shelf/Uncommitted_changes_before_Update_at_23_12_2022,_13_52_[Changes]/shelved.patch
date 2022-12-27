@@ -1,0 +1,13 @@
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.env b/.env
+new file mode 100644
+--- /dev/null	(date 1671694523040)
++++ b/.env	(date 1671694523040)
+@@ -0,0 +1,2 @@
++DOCU_NOTION_INTEGRATION_TOKEN=secret_5UxUBifREHMhicKAP5KoQq07pqni5Xwi55HGHqYG8xr
++DOCU_NOTION_SAMPLE_ROOT_PAGE=885c717759e447f39c23859ba9eef5ef
+\ No newline at end of file

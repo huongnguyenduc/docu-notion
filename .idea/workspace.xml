@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17dfc0a9-ce8b-4572-9914-8dcb2b437276" name="Changes" comment="chore: update element" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JGA8i3WEEbLDDvMnUiVzxFnI8f" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/duchuong/CodeLight/Document/src/pages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/duchuong/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/admin" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/admin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17dfc0a9-ce8b-4572-9914-8dcb2b437276" name="Changes" comment="" />
+      <created>1671693891045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671693891045</updated>
+      <workItem from="1671693892710" duration="13404000" />
+      <workItem from="1671778254362" duration="7687000" />
+      <workItem from="1671867587062" duration="34000" />
+      <workItem from="1672024897466" duration="18520000" />
+      <workItem from="1672100994126" duration="126000" />
+      <workItem from="1672107542906" duration="6342000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: update docusaurus config">
+      <created>1671696479415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671696479415</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: update github actions release">
+      <created>1671697316964</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671697316964</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: update docusaurus config">
+      <created>1671697571055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671697571055</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: update release node version">
+      <created>1671698521186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671698521186</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: try env hardcode">
+      <created>1671698885090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671698885090</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: update deployment branch">
+      <created>1671699086661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671699086661</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore: update baseUrl">
+      <created>1671699212535</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671699212535</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: remove hardcode">
+      <created>1671701995288</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671701995288</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore: update">
+      <created>1671706067551</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671706067551</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore: update github workflows">
+      <created>1671706730956</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671706730956</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chore: update github workflows">
+      <created>1671707077075</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671707077075</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: update auth">
+      <created>1671708045084</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671708045084</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore: update auth">
+      <created>1671708639019</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671708639019</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chore: update pas">
+      <created>1671778481575</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671778481575</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: add dotenv">
+      <created>1671785159701</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671785159701</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: add dotenv">
+      <created>1671786925579</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671786925579</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: integrate backend">
+      <created>1672053434265</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672053434265</updated>
+    </task>
+    <task id="LOCAL-00018" summary="chore: add brower only">
+      <created>1672053783054</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672053783054</updated>
+    </task>
+    <task id="LOCAL-00019" summary="chore: add element">
+      <created>1672107760826</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672107760826</updated>
+    </task>
+    <task id="LOCAL-00020" summary="chore: add element">
+      <created>1672108517814</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1672108517814</updated>
+    </task>
+    <task id="LOCAL-00021" summary="chore: update element">
+      <created>1672111164372</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672111164372</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: update github actions release" />
+    <MESSAGE value="chore: update docusaurus config" />
+    <MESSAGE value="chore: update release node version" />
+    <MESSAGE value="chore: try env hardcode" />
+    <MESSAGE value="chore: update deployment branch" />
+    <MESSAGE value="chore: update baseUrl" />
+    <MESSAGE value="chore: remove hardcode" />
+    <MESSAGE value="chore: update" />
+    <MESSAGE value="chore: update github workflows" />
+    <MESSAGE value="chore: update auth" />
+    <MESSAGE value="chore: update pas" />
+    <MESSAGE value="feat: add dotenv" />
+    <MESSAGE value="feat: integrate backend" />
+    <MESSAGE value="chore: add brower only" />
+    <MESSAGE value="chore: add element" />
+    <MESSAGE value="chore: update element" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update element" />
+  </component>
+</project>

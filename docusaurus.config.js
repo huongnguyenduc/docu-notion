@@ -46,7 +46,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr"],
+    locales: ["en", "vi"],
     localeConfigs: {
       en: {
         label: "English",
@@ -64,7 +64,7 @@ const config = {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        // language: ["en", "fr"],
+        language: ["en", "vi"],
         indexBlog: false,
         // indexPages: false,
         docsRouteBasePath: "/",
@@ -94,10 +94,10 @@ const config = {
         },
 
         items: [
-          // {
-          //   type: "localeDropdown",
-          //   position: "right",
-          // },
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
             {
                 type: "doc",
                 docId: "Introduction-to-docu-notion",

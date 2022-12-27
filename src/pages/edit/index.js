@@ -1,8 +1,8 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import siteConfig from '@generated/docusaurus.config';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import { gapi } from 'gapi-script';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import Navbar from '@theme/Navbar';
 
 const Index = () => {
     const clientId = siteConfig.customFields.GOOGLE_CLIENT_ID;
@@ -11,13 +11,25 @@ const Index = () => {
     const [loading, setLoading] = useState(false);
     const [isAuthored, setIsAuthored] = useState(false);
     useEffect(() => {
-        const initClient = () => {
-            gapi.client.init({
-                clientId,
-                scope: ''
-            });
-        };
-        gapi.load('client:auth2', initClient);
+        // (async () => {
+        //     const gapi = await loadGapiInsideDOM();
+        //     const initClient = () => {
+        //         gapi.client.init({
+        //             clientId,
+        //             scope: ''
+        //         });
+        //     };
+        //     gapi.load('client:auth2', initClient);
+        // })();
+        (async () => {
+            import('gapi-script').then(({gapi}) => {
+                const initClient = () => {
+                    gapi.client.init({clientId, scope: ''});
+                };
+                gapi.load('client:auth2', initClient);
+            })
+        })()
+
     });
     useEffect(() => {
         if (!profile && isAuthored) {
@@ -69,7 +81,9 @@ const Index = () => {
     }
 
     return (
+        <NavbarMobileSidebarProvider>
         <Fragment>
+            <Navbar />
             <div style={{marginTop: "20px"}} />
             <BrowserOnly fallback={<div>Loading...</div>}>
                 {() => <div style={{width: '100%', display: "flex", justifyContent: "center", marginTop: "72px"}}>
@@ -118,6 +132,7 @@ const Index = () => {
                 </div>
                 }</BrowserOnly>
         </Fragment>
+        </NavbarMobileSidebarProvider>
     )
 }
 
