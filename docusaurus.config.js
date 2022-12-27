@@ -10,7 +10,7 @@ const config = {
   title: "Docusaurus x Notion",
   tagline: "",
   url: "https://huongnguyenduc.github.io",
-  baseUrl: "/docu-notion/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
