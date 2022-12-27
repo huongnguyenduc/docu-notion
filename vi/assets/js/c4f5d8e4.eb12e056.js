@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_notion_sample_site=self.webpackChunkdocu_notion_sample_site||[]).push([[195],{2841:(e,n,t)=>{t.r(n),t.d(n,{default:()=>s});var l=t(7294),a=t(8765);const s=()=>l.createElement(a.Z,null,l.createElement("h1",null,"Landing Page"))}}]);
