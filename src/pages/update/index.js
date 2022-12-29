@@ -97,6 +97,7 @@ const Index = () => {
                                 loadAuthorized ? <div>Check authorized...</div> : isAuthored ? (
                                     <div>
                                         <button
+                                            style={{padding: "12px", borderRadius: "8px", cursor: "pointer", background: "white", color: "black"}}
                                             type="button"
                                             onClick={handleBuildNotionPages}
                                         >
